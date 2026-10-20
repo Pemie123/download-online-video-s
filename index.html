@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player Link Loader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">All-in-one</p>
+          <h1>Media Player</h1>
+        </div>
+      </header>
+
+      <section class="controls" aria-label="Load media from a URL">
+        <label class="sr-only" for="mediaUrl">Media URL</label>
+        <input
+          id="mediaUrl"
+          type="url"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Paste a video, music, image, or website link..."
+          value="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+        />
+        <div class="button-row">
+          <button id="loadButton" class="primary">Load media</button>
+          <button id="clearButton" class="secondary" type="button">Clear</button>
+        </div>
+      </section>
+
+      <div id="status" class="status" aria-live="polite">Ready to play a media link.</div>
+
+      <section class="player-shell">
+        <div id="mediaContainer" class="media-container empty" aria-live="polite">
+          <div class="placeholder">
+            <p>Paste a media URL and press Load media.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
