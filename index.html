@@ -22,11 +22,13 @@
           type="url"
           autocomplete="off"
           spellcheck="false"
-          placeholder="Paste a video, music, image, or website link..."
+          placeholder="Paste a video, music, image, file, or website link..."
           value="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
         />
         <div class="button-row">
-          <button id="loadButton" class="primary">Load media</button>
+          <button id="loadButton" class="primary" type="button">Load media</button>
+          <button id="openButton" class="tertiary" type="button">Open website</button>
+          <button id="downloadButton" class="warning" type="button">Download file</button>
           <button id="clearButton" class="secondary" type="button">Clear</button>
         </div>
       </section>
